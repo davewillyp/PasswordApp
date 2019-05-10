@@ -1,0 +1,20 @@
+﻿<Window x:Class="PasswordApp.AlertWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordApp"
+        mc:Ignorable="d"
+        Title="AlertWindow" Height="150" Width="500" WindowStyle="None" ResizeMode="NoResize" Background="#FF404144" WindowStartupLocation="CenterScreen" BorderBrush="#FFA5A5A5" BorderThickness="1">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="148" VerticalAlignment="Top" Width="498">
+            <Label x:Name="lblQuestion" Content="Are you sure you would like to change password for user:" Margin="104,17,30,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+            <Image x:Name="imgAlert" HorizontalAlignment="Left" Height="61" Margin="30,22,0,0" VerticalAlignment="Top" Width="61" Source="images/Alert.png"/>
+            <Button x:Name="btnYes" Content="Yes" HorizontalAlignment="Left" Margin="137,104,0,19" Width="75" Background="#FFA5A5A5" Foreground="White" Click="BtnYes_Click" BorderThickness="0"/>
+            <Button x:Name="btnNo" Content="No" HorizontalAlignment="Left" Margin="278,104,0,0" VerticalAlignment="Top" Width="75" Height="25" Background="#FFA5A5A5" Foreground="White" Click="BtnNo_Click" BorderThickness="0"/>
+            <Label x:Name="lblUser" Content="Label" HorizontalAlignment="Left" Margin="104,38,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Width="304" FontSize="14"/>
+            <CheckBox x:Name="chkForceChange" Content="Force change at next login" HorizontalAlignment="Left" Margin="108,67,0,0" VerticalAlignment="Top" Foreground="White"/>
+
+        </Grid>
+    </Grid>
+</Window>

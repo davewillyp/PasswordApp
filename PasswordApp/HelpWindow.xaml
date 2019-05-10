@@ -1,0 +1,27 @@
+﻿<Window x:Class="PasswordApp.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordApp"
+        mc:Ignorable="d"
+        Title="HelpWindow" Height="300" Width="600" WindowStyle="None" ResizeMode="NoResize" Background="#FF404144" WindowStartupLocation="CenterScreen" BorderBrush="#FFA5A5A5" BorderThickness="1">
+    <Grid>
+        <Button x:Name="btnOK" Content="OK" Margin="261,250,262,0" VerticalAlignment="Top" Click="BtnOK_Click" Background="#FFA5A5A5" Foreground="White" Padding="1" BorderThickness="0" Height="25"/>
+        <Label x:Name="lblTitle" Content="How To Use Password App" HorizontalAlignment="Left" Margin="17,28,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Margin="29,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="160" Width="538" Foreground="White">
+            Step 1. On first run, enter school code and confirm correct school. <LineBreak/>
+            Step 2. Start the search by typing a username in the Username text box. <LineBreak/>
+            Step 3. The first user will be selected automatically, or select a user from list by clicking on username. <LineBreak/>
+            Step 4. Once you have the correct user selected, press the F8 key to reset the password.<LineBreak/>
+            Step 5. Click Yes (or press the Enter key) to continue.<LineBreak/>
+            Step 6. The password is changed and the new password displayed on the screen.<LineBreak/><LineBreak/>
+                
+            Press the Escape Key to quit the application
+        </TextBlock>
+        <Rectangle HorizontalAlignment="Left" Height="164" Margin="21,60,0,0" Stroke="#FFA5A5A5" VerticalAlignment="Top" Width="548">
+
+        </Rectangle>
+
+    </Grid>
+</Window>

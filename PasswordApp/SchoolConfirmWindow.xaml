@@ -1,0 +1,17 @@
+﻿<Window x:Class="PasswordApp.SchoolConfirmWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordApp"
+        mc:Ignorable="d"
+        Title="SchoolConfirmWindow" Height="150" Width="500" WindowStyle="None" ResizeMode="NoResize" Background="#FF404144" WindowStartupLocation="CenterScreen" BorderBrush="#FFA5A5A5" BorderThickness="1">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="148" VerticalAlignment="Top" Width="498">
+            <Button x:Name="btnNo" Content="No" Margin="293,99,130,0" VerticalAlignment="Top" Height="25" Background="#FFA5A5A5" Foreground="White" Padding="1" BorderThickness="0" Click="BtnNo_Click"/>
+            <Button x:Name="btnYes" Content="Yes" HorizontalAlignment="Left" Margin="130,99,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="BtnOk_Click" Background="#FFA5A5A5" Foreground="White" Padding="1" BorderThickness="0"/>
+            <Label x:Name="lblText" Content="Is this School correct?" Margin="177,57,177,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+            <Label x:Name="lblSchoolName" Content="Label" Margin="50,34,50,0" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>
