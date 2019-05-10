@@ -263,6 +263,14 @@ namespace PasswordApp
                 System.Windows.Application.Current.Shutdown();
 
             }
+
+            if (e.Key == Key.F12)
+            {
+                BulkWindow bulkWindow = new BulkWindow();
+                bulkWindow.ShowDialog();
+                
+
+            }
         }
 
       
