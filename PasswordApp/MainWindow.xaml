@@ -17,8 +17,11 @@
         <ListBox x:Name="lstUsers" Height="154" Margin="356,170,33,0" VerticalAlignment="Top" SelectionChanged="LstUsers_SelectionChanged" Background="#FFA5A5A5"/>
         <Image HorizontalAlignment="Left" Height="69" Margin="59,44,0,0" VerticalAlignment="Top" Width="69" Source="images/logo.png"/>
         <Rectangle Fill="#FFA5A5A5" HorizontalAlignment="Left" Height="1" Margin="67,141,0,0" Stroke="White" VerticalAlignment="Top" Width="509"/>
-        <Button x:Name="btnHelp" HorizontalAlignment="Left" Margin="620,3,0,0" VerticalAlignment="Top" Width="25" BorderThickness="0" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" Padding="1" Click="BtnHelp_Click">
+        <Button x:Name="btnHelp" HorizontalAlignment="Left" Margin="588,3,0,0" VerticalAlignment="Top" Width="25" BorderThickness="0" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" Padding="1" Click="BtnHelp_Click">
             <Image Source="images/help.png"/>
+        </Button>
+        <Button x:Name="btnClose" HorizontalAlignment="Left" Margin="617,3,0,0" VerticalAlignment="Top" Width="25" BorderThickness="0" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" Padding="1" Click="BtnClose_Click">
+            <Image Source="images/Close.png"/>
         </Button>
         <Label x:Name="lblSchoolName" Content="Label" Margin="163,4,164,0" VerticalAlignment="Top" Foreground="White" HorizontalContentAlignment="Center" FontSize="14"/>
 

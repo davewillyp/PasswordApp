@@ -366,6 +366,11 @@ namespace PasswordApp
             HelpWindow helpWindow = new HelpWindow();
             helpWindow.ShowDialog();
         }
+
+        private void BtnClose_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
     }
 
     class User
