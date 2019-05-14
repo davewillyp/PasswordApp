@@ -393,6 +393,7 @@ namespace PasswordApp
         public string Department { get; set; }
         public string Company { get; set; }
         public string AccountStatus { get; set; }
+        public string Password { get; set; }
     }
 
 }
