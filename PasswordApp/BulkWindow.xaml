@@ -56,7 +56,7 @@
             <CheckBox x:Name="chkForce" Content="Force change at next login" HorizontalAlignment="Left" Margin="86,253,0,0" VerticalAlignment="Top" Foreground="White" Background="White"/>
         </Grid>
         <Button x:Name="btnClose" HorizontalAlignment="Left" Margin="617,3,0,0" VerticalAlignment="Top" Width="25" BorderThickness="0" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" Padding="1" Click="BtnClose_Click">
-            <Image Source="images/Close.png"/>
+            <Image Source="images/Close_colour.png"/>
         </Button>
     </Grid>
 </Window>

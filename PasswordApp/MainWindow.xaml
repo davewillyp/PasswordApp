@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PasswordApp"
         mc:Ignorable="d"
-        Title="PasswordApp" Height="350" Width="650" Background="#FF404144" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" KeyUp="WdMain_KeyUp" BorderBrush="#FFA5A5A5" BorderThickness="1" MouseDown="WdMain_MouseDown">
+        Title="PasswordApp" Height="370" Width="650" Background="#FF404144" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" KeyUp="WdMain_KeyUp" BorderBrush="#FFA5A5A5" BorderThickness="1" MouseDown="WdMain_MouseDown">
     <Grid>
         <TextBox x:Name="txtUsername" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Margin="289,64,59,0" KeyUp="TxtUsername_KeyUp" FontSize="20" TabIndex="1" Background="#FFA5A5A5" SelectionBrush="White"/>
         <Label Content="Username:" HorizontalAlignment="Left" Margin="144,57,0,0" VerticalAlignment="Top" Background="#00000000" Foreground="White" FontSize="24" FontFamily="MS Reference Sans Serif" Height="39" Width="140"/>
@@ -13,17 +13,21 @@
         <Label x:Name="lblDisplayName" Content="" HorizontalAlignment="Left" Margin="33,170,0,0" VerticalAlignment="Top" Foreground="White" BorderBrush="#FFA5A5A5" BorderThickness="4,0,0,0" Width="350" Height="30" FontSize="14"/>
         <Label x:Name="lblMail" Content="" HorizontalAlignment="Left" Margin="33,201,0,0" VerticalAlignment="Top" Width="350" Foreground="White" BorderThickness="4,0,0,0" BorderBrush="#FFA5A5A5" Height="30" FontSize="14"/>
         <Label x:Name="lblDepartment" Content="" HorizontalAlignment="Left" Margin="33,263,0,0" VerticalAlignment="Top" Width="350" Foreground="White" BorderThickness="4,0,0,0" BorderBrush="#FFA5A5A5" Height="30" FontSize="14"/>
-        <Label x:Name="lblCompany" Content="" HorizontalAlignment="Left" Margin="33,294,0,0" VerticalAlignment="Top" Width="350" Foreground="White" BorderThickness="4,0,0,0" BorderBrush="#FFA5A5A5" Height="30" FontSize="14"/>
-        <ListBox x:Name="lstUsers" Height="154" Margin="356,170,33,0" VerticalAlignment="Top" SelectionChanged="LstUsers_SelectionChanged" Background="#FFA5A5A5"/>
+        <ListBox x:Name="lstUsers" Height="176" Margin="356,170,33,0" VerticalAlignment="Top" SelectionChanged="LstUsers_SelectionChanged" Background="#FFA5A5A5"/>
         <Image HorizontalAlignment="Left" Height="69" Margin="59,40,0,0" VerticalAlignment="Top" Width="69" Source="images/logo.png"/>
         <Rectangle Fill="#FFA5A5A5" HorizontalAlignment="Left" Height="1" Margin="67,141,0,0" Stroke="White" VerticalAlignment="Top" Width="509"/>
         <Button x:Name="btnHelp" HorizontalAlignment="Left" Margin="588,3,0,0" VerticalAlignment="Top" Width="25" BorderThickness="0" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" Padding="1" Click="BtnHelp_Click">
-            <Image Source="images/help.png"/>
+            <Image Source="images/Help_colour.png"/>
         </Button>
         <Button x:Name="btnClose" HorizontalAlignment="Left" Margin="617,3,0,0" VerticalAlignment="Top" Width="25" BorderThickness="0" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" Padding="1" Click="BtnClose_Click">
-            <Image Source="images/Close.png"/>
+            <Image Source="images/Close_colour.png"/>
+        </Button>
+        <Button x:Name="btnBulk" HorizontalAlignment="Left" Margin="559,3,0,0" VerticalAlignment="Top" Width="25" BorderThickness="0" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" Padding="1" Click="BtnBulk_Click">
+            <Image Source="images/Bulk.png"/>
         </Button>
         <Label x:Name="lblSchoolName" Content="Label" Margin="163,4,164,0" VerticalAlignment="Top" Foreground="White" HorizontalContentAlignment="Center" FontSize="14"/>
-
+        <Button x:Name="btnUnlock" Content="Unlock User" HorizontalAlignment="Left" Margin="163,316,0,0" VerticalAlignment="Top" Height="30" Width="95" Background="#FFA5A5A5" Foreground="White" BorderThickness="0" Click="BtnUnlock_Click"/>
+        <Button x:Name="btnReset" Content="Reset Password" HorizontalAlignment="Left" Margin="33,316,0,0" VerticalAlignment="Top" Height="30" Width="95" Background="#FFA5A5A5" Foreground="White" BorderThickness="0" Click="BtnReset_Click"/>
+        <Label x:Name="lblVersion" Content="PasswordApp 1.1" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="0,-3,0,0" FontSize="10"/>
     </Grid>
 </Window>
