@@ -8,8 +8,8 @@
         Title="BulkWindow" Height="392" Width="650" Background="#FF404144" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderBrush="#FFA5A5A5" BorderThickness="1" KeyUp="WdBulk_KeyUp">
     <Grid>
         <Grid HorizontalAlignment="Left" Height="390" VerticalAlignment="Top" Width="648">
-            <Label x:Name="lblTitle" Content="Bulk Password Reset" Margin="242,26,242,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold"/>
-            <GroupBox x:Name="grpYear" Header="Choose Year Groups to Reset" HorizontalAlignment="Left" Height="153" Margin="39,67,0,0" VerticalAlignment="Top" Width="573" Foreground="White" FontSize="14" FontWeight="Normal">
+            <Label x:Name="lblTitle" Content="Bulk Password Reset" Margin="242,47,242,0" VerticalAlignment="Top" Foreground="White" FontSize="16" FontWeight="Bold"/>
+            <GroupBox x:Name="grpYear" Header="Choose Year Groups to Reset" HorizontalAlignment="Left" Height="153" Margin="39,82,0,0" VerticalAlignment="Top" Width="573" Foreground="White" FontSize="14" FontWeight="Normal">
                 <Grid Margin="19,0,-2,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -45,15 +45,16 @@
                         <CheckBox x:Name="chkY10" Content="Year 10" Foreground="White"/>
                         <CheckBox x:Name="chkY11" Content="Year 11" Foreground="White"/>
                         <CheckBox x:Name="chkY12" Content="Year 12" Foreground="White"/>
-                        
+
                     </StackPanel>
                     <CheckBox x:Name="chkAll" Content="Select All" Grid.Column="3" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Foreground="White" Checked="ChkAll_Checked" Unchecked="ChkAll_Unchecked"/>
                 </Grid>
             </GroupBox>
-            <Button x:Name="btnBulk" Content="Bulk Reset" Margin="483,253,90,0" VerticalAlignment="Top" Background="#FFA5A5A5" Foreground="White" Padding="1" BorderThickness="0" FontSize="12" Height="25" FontWeight="Normal" Click="BtnBulk_Click"/>
-            <ProgressBar x:Name="pbReset" Height="23" Margin="86,323,90,0" VerticalAlignment="Top"/>
-            <Label x:Name="lblUser"  HorizontalAlignment="Left" Margin="84,346,0,0" VerticalAlignment="Top" Width="318" Foreground="White" FontSize="12" FontWeight="Normal"/>
-            <CheckBox x:Name="chkForce" Content="Force change at next login" HorizontalAlignment="Left" Margin="86,253,0,0" VerticalAlignment="Top" Foreground="White" Background="White"/>
+            <Button x:Name="btnBulk" Content="Bulk Reset" Margin="483,260,90,0" VerticalAlignment="Top" Background="#FFA5A5A5" Foreground="White" Padding="1" BorderThickness="0" FontSize="12" Height="25" FontWeight="Normal" Click="BtnBulk_Click"/>
+            <ProgressBar x:Name="pbReset" Height="23" Margin="86,330,90,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblUser"  HorizontalAlignment="Left" Margin="84,353,0,0" VerticalAlignment="Top" Width="318" Foreground="White" FontSize="12" FontWeight="Normal"/>
+            <CheckBox x:Name="chkForce" Content="Force change at next login" HorizontalAlignment="Left" Margin="86,260,0,0" VerticalAlignment="Top" Foreground="White" Background="White"/>
+            <Image x:Name="imgLogo" Height="40" Margin="304,7,304,0" VerticalAlignment="Top" Source="images/Bulk.png"/>
         </Grid>
         <Button x:Name="btnClose" HorizontalAlignment="Left" Margin="617,3,0,0" VerticalAlignment="Top" Width="25" BorderThickness="0" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" Padding="1" Click="BtnClose_Click">
             <Image Source="images/Close_colour.png"/>

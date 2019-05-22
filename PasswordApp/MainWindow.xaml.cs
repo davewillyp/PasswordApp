@@ -499,6 +499,12 @@ namespace PasswordApp
         {
             UnlockUser();
         }
+
+        private void BtnReports_Click(object sender, RoutedEventArgs e)
+        {
+            ReportsWindow reportsWindow = new ReportsWindow();
+            reportsWindow.ShowDialog();
+        }
     }
 
     class User
